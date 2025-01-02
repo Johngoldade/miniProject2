@@ -1,0 +1,107 @@
+body {
+    background-color: #01182e;
+    color: salmon;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 2px;
+}
+
+header {
+    padding: 2%;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 2%;
+    width: 26%;
+    border: 2px dashed lightslategray;
+    margin: 20px 10px;
+    display: block;
+    position: relative;
+}
+
+h2 {
+    background-color: #01182e;
+    border: 2px solid lightslategray;
+    border-radius: 7px;
+    width: 86%; 
+    padding: 1%;
+    position: absolute;
+    top: -2.5rem;
+    left: 5.6%;
+}
+
+.p {
+    margin-top: 2.1rem;
+}
+
+ul {
+    list-style: none;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 90%;
+    padding: 2.5%;
+    color: #01182e;
+    background-image:linear-gradient(
+    salmon 0%,
+    hwb(0 20% 49% / 0.953) 100%);
+}
+
+li {
+    padding-bottom: .5em;
+}
+footer {
+    text-align: center;
+    text-shadow: rgb(245, 204, 200) 1px 1px 1px;
+}
+
+#indent {
+    margin-left: 1em; 
+}
+
+ul:active{
+    user-select: all;
+}
+
+::selection {
+    background: lemonchiffon;
+
+}
+
+section:hover,
+section:hover h2 {
+        cursor: text;
+        box-shadow:inset 0px 0px 5px rgb(245, 208, 204), 0 0 8px rgb(245, 208, 204) ;
+        border-color: rgb(250, 128, 114);
+        transition: all .5s ease-in-out
+}
+   
+@media screen and (max-width: 992px) {
+   section {
+    width: 41%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+     width: 90%;
+     }
+    }
+
+@media screen and (max-width: 576px) {
+    .p {
+        margin-top: 3rem;
+    }
+ }
+ 
